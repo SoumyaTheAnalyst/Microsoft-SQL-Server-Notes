@@ -1,0 +1,25 @@
+--NULL, IS NULL OPERATORS
+
+USE QUERIES;
+
+CREATE TABLE STUD(
+ID INT,
+NAME VARCHAR(30),
+mark INT
+);
+
+INSERT INTO STUD VALUES (1,'soumya',100),
+						(2,'sameer',200),
+						(3,'sagar',300),
+						(4,'kishan',400),
+						(5,'tarun',500),
+						(6,'himanshu',600);
+
+--ADDING A NULL ATTRIBUTE IN A TABLE
+INSERT INTO STUD VALUES(7,NULL,700);
+SELECT * FROM STUD;
+
+--IS NULL FUNCTION
+SELECT * FROM STUD
+WHERE NAME IS NULL
+
